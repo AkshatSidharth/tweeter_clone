@@ -1,0 +1,146 @@
+.icon__twitterLogin {
+    display: inline-block;
+    font-size: 20px;
+    color: $blue;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.icon__nav {
+    margin-right: 8px;
+    font-size: 22px;
+    top: 2px;
+    position: relative;
+    @media (max-width: 936px) {
+        left: 5px;
+    }
+}
+
+.icon__addPhoto {
+    color: #fff;
+    font-size: 26px;
+    position: relative;
+    top: -7px;
+    left: 42px;
+    z-index: 10;
+    display: block;
+    width: 50px;
+}
+
+.icon__addPhotoLarge {
+    @extend .icon__addPhoto;
+    font-size: 60px;
+    top: 70px;
+    left: 70px;
+    position: relative;
+}
+
+.icon__dropdownTweet {
+    color: $gray-text;
+    position: relative;
+    right: 10px;
+    top: 5px;
+    float: right;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.icon__hidden {
+    visibility: hidden;
+}
+
+.icon__twitter {
+    font-size: 22px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 14px !important;
+    position: absolute;
+    width: 1px;
+    color: $blue;
+}
+
+.icon__dropdown {
+    padding-right: 14px;
+    text-align: center;
+    width: 40px;
+}
+
+.icon__darkmode {
+    color: #1b95e0;
+    position: relative;
+    right: 5px;
+    top: 4px;
+    float: right;
+}
+
+.icon__twitter {
+    position: absolute;
+    color: $blue;
+    font-size: 22px;
+    margin: auto;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 22px;
+    display: inline-block;
+}
+
+.icon__back {
+    color: $blue;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon__container {
+    width: 100%;
+}
+
+.icon__addTweet {
+    font-size: 34px;
+    width: 36px;
+    height: 36px;
+    color: $blue;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.icon__caret {
+    font-size: 11px;
+    margin-top: 7px;
+    margin-right: 2px;
+    display: inline-block;
+    vertical-align: top;
+    color: #66757f;
+}
+
+.icon__profilePrivacy {
+    color: #66757f;
+}
+
+.icon__profile {
+    display: inline-block;
+    margin-top: 11px;
+    margin-right: 8px;
+    color: $gray-text;
+}
+
+#file {
+    display: none;
+}
+
+.icon__footer {
+    width: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+}
+
+.icon__pinnedTweet {
+    color: $blue;
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 10px;
+}

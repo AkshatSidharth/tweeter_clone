@@ -1,0 +1,231 @@
+//: Containers
+.tweet--container {
+    background: #fff;
+    padding: 10px 5px;
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #e6ecf0;
+    &:hover {
+        background: #f5f8fa;
+        cursor: pointer;
+    }
+}
+
+.tweet--displayImgContainer {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding: 0 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    vertical-align: top;
+}
+
+.tweet--textContainer {
+    display: inline-block;
+    margin-top: -4px;
+    margin-left: 20px;
+}
+
+.tweet--tweetContainer {
+    display: block;
+    margin-top: -4px;
+}
+
+.tweet--interactionsContainer {
+    display: flex;
+}
+
+.tweet--iconContainer {
+    width: 80px;
+}
+
+//: Images
+.tweet--displayImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tweet--verifiedIcon {
+    height: 20px;
+    width: 20px;
+    margin-top: -5px;
+}
+
+//: Text
+.tweet--nameText {
+    display: inline;
+    font-weight: 700;
+    margin-right: 4px;
+    &:hover {
+        color: $blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.tweet--handleText {
+    display: inline;
+    color: #657786;
+    font-weight: 200;
+}
+
+.tweet--dropdownContainer {
+    position: relative;
+    background: #fff;
+    width: 200px;
+    height: 220px;
+    margin-bottom: -220px;
+    left: 386px;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 0 3px 1px rgb(221, 221, 221);
+    -moz-box-shadow: 0 0 3px 1px rgb(221, 221, 221);
+    box-shadow: 0 0 3px 1px rgb(221, 221, 221);
+    border-radius: 5px;
+    top: 34px;
+    z-index: 10;
+    @media screen and (min-width: 1250px) {
+        left: 596px;
+    }
+}
+
+.tweet--dropdownItem {
+    color: $gray-text;
+    display: block;
+    padding: 5px 20px;
+    margin: 0;
+    font-size: 14px;
+    &:hover {
+        background: $blue;
+        color: #fff;
+    }
+    &:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 30px;
+        top: -19px;
+        pointer-events: none;
+        @media screen and (max-width: 1250px) {
+            left: 168px;
+        }
+    }
+    &:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid rgb(221, 221, 221);
+        left: 30px;
+        top: -20px;
+        pointer-events: none;
+        @media screen and (max-width: 1250px) {
+            left: 168px;
+        }
+    }
+}
+
+.tweet--dropdownContainerUser {
+    @extend .tweet--dropdownContainer;
+    height: 246px;
+    margin-bottom: -246px;
+}
+
+//: Icons
+.tweet--interaction {
+    color: #657786;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.tweet--userLiked {
+    @extend .tweet--like;
+    color: $like;
+    > i {
+        color: $like;
+    }
+}
+
+.tweet--userRetweet {
+    @extend .tweet--retweet;
+    color: $retweet;
+    > i {
+        color: $retweet;
+    }
+}
+
+.tweet--comment {
+    width: 80px;
+    &:hover {
+        color: $blue;
+        > i {
+            color: $blue;
+        }
+    }
+}
+
+.tweet--retweet {
+    width: 80px;
+    &:hover {
+        color: $retweet;
+        > i {
+            color: $retweet;
+        }
+    }
+}
+
+.tweet--like {
+    width: 80px;
+    &:hover {
+        color: $like;
+        > i {
+            color: $like;
+        }
+    }
+}
+
+.tweet--message {
+    width: 80px;
+    &:hover {
+        color: $blue;
+        > i {
+            color: $blue;
+        }
+    }
+}
+
+.tweet--interactionText {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tweet--pinnedText {
+    display: inline-block;
+    color: $gray-text;
+    font-size: 12px;
+}
+
+.tweet--pinnedTextContainer {
+    margin-left: 54px;
+    margin-top: -8px;
+    padding: 0;
+    height: 26px;
+}
