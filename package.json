@@ -14,14 +14,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/akshatsidharth/twitter-clone.git"
+        "url": "git+https://github.com/AkshatSidharth/twitter_clone/"
     },
     "author": "Akshat Sidharth",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/akshatsidharth/twitter-clone/issues"
+        "url": "https://github.com/AkshatSidharth/twitter_clone/issues"
     },
-    "homepage": "https://github.com/akshatsidharth/twitter-clone#readme",
+    "homepage": "https://github.com/AkshatSidharth/twitter_clone#readme",
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "^7.1.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
